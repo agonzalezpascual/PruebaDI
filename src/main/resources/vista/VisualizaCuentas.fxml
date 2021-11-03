@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ModificaCuentas">
+   <children>
+      <Label fx:id="etiExist" layoutX="70.0" layoutY="33.0" text="VISOR DE LAS CUENTAS EXISTENTES">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="etiNueva" layoutX="80.0" layoutY="33.0" text="VISOR DE LAS CUENTAS NUEVAS" visible="false">
+         <font>
+            <Font name="Century Gothic Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="95.0" text="Número:">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font></Label>
+      <Label layoutX="70.0" layoutY="137.0" text="Titular:">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font></Label>
+      <Label layoutX="70.0" layoutY="179.0" text="Fecha Apertura:">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font></Label>
+      <Label layoutX="71.0" layoutY="221.0" text="Saldo:">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font></Label>
+      <TextField fx:id="numero" editable="false" layoutX="210.0" layoutY="88.0" prefHeight="31.0" prefWidth="203.0" />
+      <TextField fx:id="titular" editable="false" layoutX="210.0" layoutY="130.0" prefHeight="31.0" prefWidth="203.0" />
+      <TextField fx:id="fecha" editable="false" layoutX="210.0" layoutY="172.0" prefHeight="31.0" prefWidth="203.0" />
+      <TextField fx:id="saldo" editable="false" layoutX="210.0" layoutY="214.0" prefHeight="31.0" prefWidth="203.0" />
+      <Button fx:id="siguiente" layoutX="338.0" layoutY="292.0" mnemonicParsing="false" onAction="#accionSiguiente" prefHeight="31.0" prefWidth="75.0" text="&gt;&gt;">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Button>
+      <Button fx:id="atras" disable="true" layoutX="66.0" layoutY="292.0" mnemonicParsing="false" onAction="#accionAtras" prefHeight="31.0" prefWidth="75.0" text="&lt;&lt;" visible="false">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Button>
+      <Button fx:id="nueva" disable="true" layoutX="338.0" layoutY="292.0" mnemonicParsing="false" onAction="#accionNueva" prefHeight="31.0" prefWidth="75.0" text="Nueva" visible="false">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Button>
+      <Button fx:id="aceptar" disable="true" layoutX="338.0" layoutY="292.0" mnemonicParsing="false" onAction="#accionAceptar" prefHeight="31.0" prefWidth="75.0" text="Aceptar" visible="false">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font></Button>
+      <Button fx:id="cancelar" disable="true" layoutX="66.0" layoutY="292.0" mnemonicParsing="false" onAction="#accionCancelar" prefHeight="31.0" prefWidth="75.0" text="Cancelar" visible="false">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelCuentaExist" layoutX="69.0" layoutY="263.0" text="Cuentas existentes:" />
+      <Label fx:id="numExist" layoutX="212.0" layoutY="264.0" text="0" />
+      <Label fx:id="labelCuenta50000" layoutX="276.0" layoutY="262.0" text="Cuentas +50000:" />
+      <Label fx:id="num50000" layoutX="403.0" layoutY="263.0" text="0" />
+   </children>
+</Pane>
